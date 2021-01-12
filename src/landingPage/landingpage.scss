@@ -1,0 +1,22 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  h2 {
+    margin: 0;
+  }
+  button {
+    // width: 30px;
+    // height: 30px;
+    font-size: 2rem;
+    padding: 1.5em;
+    border-radius: 5%;
+    background: #06d6a0;
+    color: #323031;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px black;
+  }
+}
