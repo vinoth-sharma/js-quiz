@@ -1,0 +1,43 @@
+.result-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  background: #83838345;
+  .result-container {
+    background: black;
+    max-width: 30%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 2em 4em;
+    img {
+      height: 240px;
+    }
+    h2 {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .score {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    button {
+      float: right;
+      background: red;
+      color: white;
+      font-size: 1.2rem;
+      padding: 8px 24px;
+      border-radius: 25px;
+      font-weight: 800;
+    }
+  }
+}

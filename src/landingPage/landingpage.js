@@ -1,13 +1,14 @@
 import "./landingpage.scss";
 
-function LandingPage() {
+function LandingPage(props) {
+
   return (
     <div className="landing-page">
       <h2>
         Test your <span>Javascript Knowledge!</span>
       </h2>
       <h3>Ready for the action</h3>
-      <button>Start</button>
+      <button onClick={()=>props.onStart("questions")}>Start</button>
     </div>
   );
 }
