@@ -22,7 +22,11 @@ export function ResultModal({result}) {
             <p>{result?.score} / {result?.total}</p>
           </div>
         </div>
-      <button onClick={_restart}>Restart</button>
+        <div className="signContainer">
+          <div>Digitally Signed by</div>
+          <div className="name">Vinoth Sharma</div>
+        </div>
+      <button onClick={_restart}>Retry</button>
 
       </div>
     </div>

@@ -4,7 +4,7 @@
     left: -100;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
+    background: linear-gradient(90deg, transparent, #ecb0fe);
     animation: animate1 1s linear infinite;
   }
   span:nth-child(2) {
@@ -12,7 +12,7 @@
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #ecb0fe);
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
   }
@@ -21,7 +21,7 @@
     right: -100;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, #ecb0fe);
     animation: animate3 1s linear infinite;
     animation-delay: 0.25s;
   }
@@ -30,7 +30,7 @@
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #ecb0fe);
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
   }
@@ -42,6 +42,7 @@
     height: calc(100% - 330px);
     img {
       margin: auto;
+      max-width: 65%;
       max-height: 100%;
       box-shadow: 3px 3px 13px 0px #efefef2e;
     }
@@ -63,9 +64,9 @@
       width: 350px;
       margin-top: 10px;
       text-align: left;
-      background: #151718;
+      background: transparent;
       color: whitesmoke;
-      box-shadow: 2px 2px 6px -2px whitesmoke;
+      // box-shadow: 2px 2px 6px -2px whitesmoke;
       &.green {
         background: #6ac203;
         color: #050801;

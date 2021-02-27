@@ -40,4 +40,14 @@
       font-weight: 800;
     }
   }
+  .signContainer{
+    float: left;
+    text-align: center;
+    .name{
+      padding: 9px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    }
+  }
 }
