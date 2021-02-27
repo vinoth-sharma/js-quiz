@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import "./resultModal.scss";
 
 export function ResultModal({result}) {
-  console.log(result);
 
   useEffect(()=>{
   },[result]);
@@ -23,7 +22,7 @@ export function ResultModal({result}) {
           </div>
         </div>
         <div className="signContainer">
-          <div>Digitally Signed by</div>
+          <div>Awarded by</div>
           <div className="name">Vinoth Sharma</div>
         </div>
       <button onClick={_restart}>Retry</button>

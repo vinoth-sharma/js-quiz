@@ -71,7 +71,6 @@ function Question() {
   };
 
   const _getClassName = (i) => {
-    console.log(selectedQues);
     let className = "";
     className = selectedQues.result ? "selectionMade":"";
     if (selectedQues["greenIndex"] === i) {
