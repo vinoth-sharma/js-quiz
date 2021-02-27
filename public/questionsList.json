@@ -2,25 +2,60 @@
     {
         "question_image" : "/questions/1.png",
         "id" : 1,
-        "options" : ["1","abc","[1,2]","hlooo"],
-        "answer_index" : 2
+        "options" : ["undefined",30,"Uncaught ReferenceError","None of these"],
+        "answer_index" : 1
     },
     {
         "question_image" : "/questions/2.png",
         "id" : 2,
-        "options" : ["ASDAD","sefsef awd","[1,2]","hlooo"],
+        "options" : ["Error","5 5 5 5 5","0 1 2 3 4","None of these"],
         "answer_index" : 2
     },
     {
-        "question_image" : "/questions/1.png",
+        "question_image" : "/questions/3.png",
         "id" : 3,
-        "options" : ["1","abc","[1,2]","hlooo"],
+        "options" : ["Uncaught ReferenceError","vinoth","undefined","None of these"],
+        "answer_index" : 1
+    },
+    {
+        "question_image" : "/questions/4.png",
+        "id" : 4,
+        "options" : ["Uncaught ReferenceError",100,"undefined","None of these"],
+        "answer_index" : 0
+    },
+    {
+        "question_image" : "/questions/5.png",
+        "id" : 5,
+        "options" : [10,100,"undefined","null"],
+        "answer_index" : 2
+    },    {
+        "question_image" : "/questions/6.png",
+        "id" : 6,
+        "options" : [90,100,"undefined","None of these"],
+        "answer_index" : 0
+    },
+    {
+        "question_image" : "/questions/7.png",
+        "id" : 7,
+        "options" : [42,"Uncaught ReferenceError","undefined","None of these"],
+        "answer_index" : 1
+    },
+    {
+        "question_image" : "/questions/8.png",
+        "id" : 8,
+        "options" : ["10 5","10 10","10 undefined","10 2"],
+        "answer_index" : 3
+    },
+    {
+        "question_image" : "/questions/9.png",
+        "id" : 9,
+        "options" : [123,"undefined","Uncaught ReferenceError","None of these"],
         "answer_index" : 2
     },
     {
-        "question_image" : "/questions/1.png",
-        "id" : 4,
-        "options" : ["1","abc","[1,2]","hlooo"],
-        "answer_index" : 2
+        "question_image" : "/questions/10.png",
+        "id" : 10,
+        "options" : ["Uncaught TypeError:","undefined",3,"[1,2,10]"],
+        "answer_index" : 0
     }
 ]

@@ -71,12 +71,15 @@ function Question() {
   };
 
   const _getClassName = (i) => {
+    console.log(selectedQues);
+    let className = "";
+    className = selectedQues.result ? "selectionMade":"";
     if (selectedQues["greenIndex"] === i) {
-      return "green";
+      className += " green";
     } else if (selectedQues["redIndex"] === i) {
-      return "red";
+      className += " red";
     }
-    return "";
+    return className;
   };
 
   const _getNextContainer = () => {
@@ -112,12 +115,16 @@ function Question() {
           {selectedQues.options.map((option, index) => {
             return (
               <div key={index}>
-                <span>{index + 1 + ")"}</span>
+                <span className="no">{index + 1 + ")"}</span>
                 <button
                   key={index}
                   onClick={() => _onSelect(option, index)}
                   className={_getClassName(index)}
                 >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                   {option}
                 </button>
               </div>
@@ -125,7 +132,7 @@ function Question() {
           })}
         </div>
         <div className="quizStatus">
-          {selectedQues.id} / {data.length}
+          <span>{selectedQues.id}</span> / {data.length}
         </div>
         {_getNextContainer()}
         {result && <ResultModal result={result} />}

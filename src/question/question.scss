@@ -1,3 +1,41 @@
+@mixin hover-effect {
+  span:nth-child(1) {
+    top: 0;
+    left: -100;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+  }
+  span:nth-child(2) {
+    top: 100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  span:nth-child(3) {
+    bottom: 0;
+    right: -100;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+}
+
 .ques-container {
   min-height: 100%;
   .img-wrapper {
@@ -14,28 +52,34 @@
     flex-direction: column;
     align-items: center;
     min-height: 330px;
-    span {
+    .no {
       margin-right: 15px;
     }
     button {
+      position: relative;
+      overflow: hidden;
       padding: 1em;
       font-size: 1.25rem;
       width: 350px;
       margin-top: 10px;
-      border-radius: 14px;
       text-align: left;
       background: #151718;
       color: whitesmoke;
       box-shadow: 2px 2px 6px -2px whitesmoke;
-      &.green{
-        background-color: green;
+      &.green {
+        background: #6ac203;
+        color: #050801;
+        box-shadow: 0 0 5px #6ac203, 0 0 25px #6ac203, 0 0 50px #6ac203,
+          0 0 200px #6ac203;
       }
-      &.red{
-        background-color: red;
+      &.red {
+        background-color: #cb0606;
+        color: #050801;
       }
-    }
-    button:hover {
-      transform: skew(-7deg, 0deg) scale(1.05);
+      &:not(.selectionMade):hover {
+        @include hover-effect;
+        cursor: pointer;
+      }
     }
   }
   .nextQues {
@@ -50,15 +94,15 @@
       padding: 5px 0px;
     }
   }
-  .quizStatus{
+  .quizStatus {
     position: absolute;
     top: 45%;
     left: 30px;
-    &::first-letter{
+    span {
       font-size: 4rem;
     }
   }
-  .finish{
+  .finish {
     position: absolute;
     top: 45%;
     right: 20px;
@@ -81,4 +125,49 @@
   bottom: 0;
   right: 0;
   font-size: 1.725rem;
+}
+
+button span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
