@@ -1,5 +1,5 @@
 # To Test Your Javascript Knowledge 
- Do Visit [JS Quiz](https://app-js-quiz.web.app/)
+ Do Visit [JS Quiz](https://app-js-quiz.web.app/) Application.
 
 
 
